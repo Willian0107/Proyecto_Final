@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi_trabajo</title>
+    <link href="./CSS/estilomio.css"
+     media="screen" rel="stylesheet"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+<body>
+    <div class="header">
+      <img src="./img/LOGO REAL 2.png" class="d-block w-40" alt="...">
+      </div>
+      
+      <div class="topnav">
+        <a href="index.html">Inicio</a>
+        <a href="indexmio.html">Productos</a>
+        <a href="registro-persosnal.html">Compras</a>
+        <a href="index.02.html">Contáctanos</a>
+       
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>PPRODUCTOS DISPONIBLES</h2>
+            <h5>Del lunes 11 al lunes 25 de Julio</h5>
+            <div class="fakeimg" style="height:610px;">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 7</div>
+                      <img src="./img/SUDADERA.png" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 7</div>
+                      <img src="./img/camisetas.png" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 7</div>
+                      <img src="./img/POLO.png" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 7</div>
+                      <img src="./img/gorra uwu.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 7</div>
+                      <img src="./img/mochila.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">6 / 7</div>
+                      <img src="./img/zapatos uwu.png" style="width:100%">
+                    </div>
+
+                    
+                </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+            </div>
+            
+            <br><p>SUDADERAS, ZAPATOS, MOCHILAS, CAMISAS, C. POLOS, GORRAS. </p>
+           
+          </div>
+
+          
+             
+                     
+          
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h4>Exclusivo</h4>
+            <div class="fakeimg" style="height:215px;"> <img src="./img/cartera uwu.png" style="width:100%" width="50%" height="95%">
+            </div>
+            <p><ul>
+                <li>Oferta de ultima hora.</li>
+               <li>Importado de Rusia</li>
+                <li>Calidad Clivelar</li>
+            </ul></p>
+          </div>
+         
+         
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h1><b>Autor: William Mart&iacute;nez - Sistema DSW 11</b></h1>
+      <h2> Derechos reservados &reg; </h2>
+      <h2>Contacta con nosotros: email <a href="mailto:william.ayala22@itca.edu.sv">william.ayala22@itca.edu.sv</a></h2>
+      <br/>
+      </div>
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+          
+</body>
+</html>
